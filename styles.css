@@ -1,0 +1,146 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+/* Color Variables & Typography */
+:root {
+    --bg-color: #0d0d0d;
+    --text-primary: #f0f0f0;
+    --text-muted: #a0a0a0;
+    --accent-red: #c0392b;
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #222;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.nav-links a, 
+.nav-links button {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-family: var(--font-sans);
+}
+
+.nav-links a:hover, 
+.nav-links button:hover {
+    color: var(--text-primary);
+}
+
+/* Hero Section */
+.hero {
+    margin-bottom: 60px;
+}
+
+.genre-tag {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    border: 1px solid #333;
+    padding: 6px 14px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+h1.title {
+    font-family: var(--font-serif);
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+.sub-tagline {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Content Sections */
+.section {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 35px;
+    margin-bottom: 40px;
+}
+
+.section-subhead {
+    color: var(--accent-red);
+    font-size: 0.75rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+h2.headline {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.media-container {
+    margin: 25px 0;
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 6px;
+}
+
+/* Dialog / Popup Modal */
+dialog {
+    background: #141414;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    float: right;
+    cursor: pointer;
+}
