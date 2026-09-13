@@ -51,7 +51,7 @@ h2 {
     margin-top: 5px;
 }
 
-/* Card Names & Titles */
+/* Section Names & Titles */
 h3 {
     font-family: 'Inter', sans-serif;
     font-size: 0.85rem;
@@ -85,5 +85,5 @@ hr {
     border: 0;
     height: 1px;
     background-color: #1a1818;
-    margin: 40px 0;
+    margin: 40px;
 }
