@@ -58,18 +58,29 @@ h3 {
     font-weight: 600;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #d1cdcd;
     margin-top: 15px;
     margin-bottom: 4px;
 }
 
-/* Subtitles & Category Labels */
-p strong, header p strong, section > p:first-child {
+#genre {
     font-family: 'Inter', sans-serif;
-    font-size: 0.7rem;
-    letter-spacing: 2px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #d1cdcd;
     text-transform: uppercase;
-    color: #a82323; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #a61111;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 /* Paragraph Text */
