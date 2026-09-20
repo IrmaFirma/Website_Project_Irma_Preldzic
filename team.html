@@ -3,51 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="styles.css">
 
     <title>Team - Trapped</title>
 </head>
-<body>
+
+<body class="team-page">
 
     <!-- Navigation Bar -->
-    <nav>
-        <a href="index.html">Home</a>| 
-        <a href="story.html">Story</a>| 
-        <a href="team.html"><strong>Team</strong></a>| 
-        <a href="index.html">Watch</a>
+    <nav class="navbar">
+
+        <div class="nav-left">
+            <a href="index.html">HOME</a>
+            <a href="story.html">STORY</a>
+            <a href="team.html" class="active">TEAM</a>
+        </div>
+
     </nav>
 
-    <hr>
 
-    <!-- TODO: Opening Door animation, team member photos, team member bios -->
-    <main>
-        <section>
-            <p><strong id="sub">THE TEAM</strong></p>
-            <h2>The people behind the story.</h2>
+    <!-- Team -->
+    <main class="team">
 
-            <!-- Team Member 1 -->
-            <div>
-                <img src="assets/door.png" alt="Photo placeholder for Dina" width="200" height="200">
+        <section class="team-heading">
+
+            <p class="sub">THE TEAM</p>
+
+            <h1>The people behind<br>the story.</h1>
+
+        </section>
+
+
+        <section class="team-members">
+
+            <!-- Dina -->
+            <div class="team-member">
+
+                <div class="member-image">
+                    <img src="assets/door.png" alt="Dina">
+                </div>
+
                 <h3>Dina</h3>
-                <p>Here lies a brief description of Dina's role and contributions to the project.</p>
+
+                <p>Team Member</p>
+
+                <span></span>
+
             </div>
 
-            <!-- Team Member 2 -->
-            <div>
-                <img src="assets/door.png" alt="Photo placeholder for Irma" width="200" height="200">
+
+            <!-- Irma -->
+            <div class="team-member">
+
+                <div class="member-image">
+                    <img src="assets/door.png" alt="Irma">
+                </div>
+
                 <h3>Irma</h3>
-                <p>Here lies a brief description of Irma's role and contributions to the project.</p>
+
+                <p>Team Member</p>
+
+                <span></span>
+
             </div>
 
-            <!-- Team Member 3 -->
-            <div>
-                <img src="assets/door.png" alt="Photo placeholder for Mariam" width="200" height="200">
+
+            <!-- Mariam -->
+            <div class="team-member">
+
+                <div class="member-image">
+                    <img src="assets/door.png" alt="Mariam">
+                </div>
+
                 <h3>Mariam</h3>
-                <p>Here lies a brief description of Mariam's role and contributions to the project.</p>
+
+                <p>Team Member</p>
+
+                <span></span>
+
             </div>
 
         </section>
+
     </main>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
