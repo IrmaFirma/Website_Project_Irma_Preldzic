@@ -40,17 +40,18 @@
 
                 <div class="video-box">
 
-                    <video controls>
-                        <source src="assets/trapped.mp4" type="video/mp4">
+                    <!-- preview only, the real player is the pop-up below -->
+                    <video preload="metadata" muted>
+                        <source src="assets/trapped.mp4#t=0.5" type="video/mp4">
                     </video>
+
+                    <button class="play-button" id="open-film" aria-label="Play film"></button>
 
                 </div>
 
                 <div class="video-label">
 
                     <p class="sub">WATCH FILM</p>
-
-                    <span></span>
 
                 </div>
 
@@ -97,6 +98,18 @@
         </header>
 
     </main>
+
+
+    <!-- Film pop-up (hidden until you click play) -->
+    <div class="film-modal" id="film-modal">
+
+        <button class="close-film" id="close-film">CLOSE</button>
+
+        <video id="full-film" controls>
+            <source src="assets/trapped.mp4" type="video/mp4">
+        </video>
+
+    </div>
 
 
     <script src="script.js"></script>
