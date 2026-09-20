@@ -1,49 +1,31 @@
-// Open the film viewer
-const openFilm = document.getElementById("open-film");
-const filmModal = document.getElementById("film-modal");
-const closeFilm = document.getElementById("close-film");
-const fullFilm = document.getElementById("full-film");
+// Genre tag turns red when you hover over it (homepage only)
+const genreBox = document.querySelector(".genre-box");
 
-if (openFilm) {
+// the other pages don't have a genre box so check first
+if (genreBox) {
 
-    openFilm.addEventListener("click", function() {
+    genreBox.addEventListener("mouseover", function() {
+        genreBox.classList.add("red");
+    });
 
-        filmModal.classList.add("show");
-
-        fullFilm.play();
-
+    genreBox.addEventListener("mouseout", function() {
+        genreBox.classList.remove("red");
     });
 
 }
 
 
-// Close the film viewer
-if (closeFilm) {
+// Team cards light up when you hover over them (team page only)
+const teamMembers = document.querySelectorAll(".team-member");
 
-    closeFilm.addEventListener("click", function() {
+for (let i = 0; i < teamMembers.length; i++) {
 
-        filmModal.classList.remove("show");
-
-        fullFilm.pause();
-
+    teamMembers[i].addEventListener("mouseover", function() {
+        teamMembers[i].classList.add("active");
     });
 
-}
-
-
-// Close when clicking outside the video
-if (filmModal) {
-
-    filmModal.addEventListener("click", function(event) {
-
-        if (event.target === filmModal) {
-
-            filmModal.classList.remove("show");
-
-            fullFilm.pause();
-
-        }
-
+    teamMembers[i].addEventListener("mouseout", function() {
+        teamMembers[i].classList.remove("active");
     });
 
 }
