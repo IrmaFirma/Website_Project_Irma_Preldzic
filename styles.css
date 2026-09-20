@@ -42,7 +42,7 @@ body {
     color: #e5e0dc;
     text-decoration: none;
     font-family: 'Playfair Display', serif;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     letter-spacing: 2px;
 }
 
@@ -68,7 +68,7 @@ body {
 /* red labels */
 .sub {
     color: #d72d35;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 3px;
 }
@@ -95,6 +95,7 @@ body {
 }
 
 .video-box {
+    position: relative;
     height: 180px;
     border: 1px solid rgba(255, 255, 255, 0.35);
     background-color: black;
@@ -104,6 +105,37 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+/* play button on top of the video preview */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.play-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    border-left: 16px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.play-button:hover {
+    background-color: #d72d35;
+    border-color: #d72d35;
 }
 
 .video-label {
@@ -117,7 +149,9 @@ body {
     margin: 0;
 }
 
-.video-label span {
+/* red line next to WATCH FILM */
+.video-label::after {
+    content: "";
     width: 40px;
     height: 1px;
     background-color: #d72d35;
@@ -131,13 +165,13 @@ body {
 
 .nyuad-text p {
     margin: 0;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-weight: 300;
 }
 
 .nyuad-text .sub {
     margin-bottom: 12px;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     font-weight: 600;
 }
 
@@ -169,7 +203,7 @@ body {
     padding: 13px 22px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: #e2ddd8;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     letter-spacing: 3px;
     transition: 0.3s;
 }
@@ -223,12 +257,14 @@ body {
 .story-card .sub {
     margin-bottom: 0;
     color: #d72d35;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     font-weight: 600;
     line-height: 1.6;
 }
 
-.red-line {
+/* red line at the bottom of the story card */
+.story-card::after {
+    content: "";
     display: block;
     width: 40px;
     height: 2px;
@@ -295,7 +331,7 @@ body {
 .team-member h3 {
     margin: 18px 18px 5px;
     color: #f1ece8;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -304,10 +340,12 @@ body {
 .team-member p {
     margin: 0 18px 12px;
     color: #aaa29b;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
-.team-member span {
+/* small red line at the bottom of each card */
+.team-member::after {
+    content: "";
     display: block;
     width: 30px;
     height: 2px;
@@ -378,3 +416,47 @@ body {
         transform: translateX(100%);
     }
 }
+
+
+/* film pop-up */
+.film-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.92);
+    z-index: 200;
+}
+
+/* js adds this class to show the pop-up */
+.film-modal.show {
+    display: flex;
+}
+
+.film-modal video {
+    max-width: 90%;
+    max-height: 85vh;
+}
+
+.close-film {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    padding: 0;
+    border: none;
+    background: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.close-film:hover {
+    color: #d72d35;
+}
+  
