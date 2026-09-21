@@ -50,7 +50,7 @@ The goal was not just to host the video. I wanted the website to extend the film
 
 ## 4. Implementation Process
 
-**Step 1: Plan the content and the mood + Wireframes Assignment **
+**Step 1: Plan the content and the mood + Wireframes Assignment**
 Before writing any code I decided what each page needed to say. The story text came straight from Dina's dream and from our experience of making the film. I chose the dark palette, the red accent and the two fonts at this stage, and sketched the homepage: video at the top left, a short note about NYUAD at the bottom left, and the large title on the right.
 
 **Step 2: Build the HTML structure.**
