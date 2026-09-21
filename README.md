@@ -100,5 +100,6 @@ I removed unused HTML wrappers and empty `<span>` tags, replaced them with CSS, 
 **Learning resources.** These pages explain the techniques used in the project:
 - MDN Web Docs, *Using CSS animations*: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations
 - MDN Web Docs, *@keyframes*: https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
+- MDN Web Docs, *Video and audio APIs*: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Video_and_audio_APIs
 
 **Fonts.** Playfair Display and Inter, from Google Fonts.
