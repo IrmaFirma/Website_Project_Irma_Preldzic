@@ -37,7 +37,6 @@ body {
 }
 
 .navbar a {
-    position: relative;
     padding-bottom: 10px;
     color: #e5e0dc;
     text-decoration: none;
@@ -50,17 +49,17 @@ body {
     color: white;
 }
 
+/* red line under the page you are on */
 .navbar a.active {
     color: white;
+    border-bottom: 2px solid #d72d35;
 }
 
-.navbar a.active::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+
+/* red lines (hr tags) */
+.red-line {
     height: 2px;
+    border: none;
     background-color: #d72d35;
 }
 
@@ -115,22 +114,14 @@ body {
     transform: translate(-50%, -50%);
     width: 56px;
     height: 56px;
+    padding: 0 0 0 4px;
     border: 1px solid white;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
-}
-
-.play-button::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 54%;
-    transform: translate(-50%, -50%);
-    border-left: 16px solid white;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
 }
 
 .play-button:hover {
@@ -149,12 +140,10 @@ body {
     margin: 0;
 }
 
-/* red line next to WATCH FILM */
-.video-label::after {
-    content: "";
+.video-label .red-line {
     width: 40px;
     height: 1px;
-    background-color: #d72d35;
+    margin: 0;
 }
 
 .nyuad-story {
@@ -213,7 +202,6 @@ body {
     border-color: #d72d35;
 }
 
-
 /* story page */
 .story {
     display: flex;
@@ -262,16 +250,10 @@ body {
     line-height: 1.6;
 }
 
-/* red line at the bottom of the story card */
-.story-card::after {
-    content: "";
-    display: block;
+.story-card .red-line {
     width: 40px;
-    height: 2px;
     margin: 0 auto;
-    background-color: #d72d35;
 }
-
 
 /* team page */
 .team {
@@ -319,12 +301,12 @@ body {
     transition: 0.3s;
 }
 
-/* added by js when you hover over a team member */
-.team-member.active {
+/* hover on a team card */
+.team-member:hover {
     border-color: #d72d35;
 }
 
-.team-member.active img {
+.team-member:hover img {
     filter: brightness(1);
 }
 
@@ -343,14 +325,9 @@ body {
     font-size: 0.8rem;
 }
 
-/* small red line at the bottom of each card */
-.team-member::after {
-    content: "";
-    display: block;
+.team-member .red-line {
     width: 30px;
-    height: 2px;
     margin: 0 18px 20px;
-    background-color: #d72d35;
 }
 
 
@@ -387,8 +364,7 @@ body {
 }
 
 /* door handles */
-.door::after {
-    content: "";
+.handle {
     position: absolute;
     top: 50%;
     width: 8px;
@@ -397,11 +373,11 @@ body {
     border-radius: 4px;
 }
 
-.door-left::after {
+.door-left .handle {
     right: 25px;
 }
 
-.door-right::after {
+.door-right .handle {
     left: 25px;
 }
 
@@ -416,7 +392,6 @@ body {
         transform: translateX(100%);
     }
 }
-
 
 /* film pop-up */
 .film-modal {
@@ -459,4 +434,3 @@ body {
 .close-film:hover {
     color: #d72d35;
 }
-  
