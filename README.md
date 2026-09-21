@@ -98,6 +98,7 @@ I removed unused HTML wrappers and empty `<span>` tags, replaced them with CSS, 
 **Images.** The homepage background image and the team member images were generated with **ChatGPT**.
 
 **Learning resources.** These pages explain the techniques used in the project:
+- MDN Web Docs, *hover CSS pseudo-class*: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:hover
 - MDN Web Docs, *background-image CSS property*: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-image
 - MDN Web Docs, *background-attachment CSS property*: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-attachment
 - MDN Web Docs, *background-size CSS property*: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-size
