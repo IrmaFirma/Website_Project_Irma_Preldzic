@@ -98,6 +98,9 @@ I removed unused HTML wrappers and empty `<span>` tags, replaced them with CSS, 
 **Images.** The homepage background image and the team member images were generated with **ChatGPT**.
 
 **Learning resources.** These pages explain the techniques used in the project:
+- MDN Web Docs, *header HTML element*: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/header
+- MDN Web Docs, *main HTML element*: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/main
+- MDN Web Docs, *section HTML element*: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/section
 - MDN Web Docs, *Using CSS animations*: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations
 - MDN Web Docs, *@keyframes*: https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
 - MDN Web Docs, *Video and audio APIs*: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Video_and_audio_APIs
