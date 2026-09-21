@@ -57,7 +57,7 @@ Before writing any code I decided what each page needed to say. The story text c
 Each page shares the same navigation bar and links to one stylesheet. I used meaningful tags (`nav`, `main`, `section`, `header`) and added comments so each part is easy to find. Images have `alt` text, and the pages have their own `<title>`.
 
 **Step 3: Style everything in CSS.**
-I set the base styles first (background, text color, fonts), then styled the navigation, the homepage, the story card and the team cards one at a time. The red accent lines (under the active link, at the bottom of the story card and team cards, next to "WATCH FILM") are drawn with `::after` rather than extra HTML elements, which keeps the markup clean.
+I set the base styles first (background, text color, fonts), then styled the navigation, the homepage, the story card and the team cards one at a time. 
 
 **Step 4: Fix the layout.**
 I rebuilt the homepage with **flexbox**: a left column (video and NYUAD box) and the title on the right. I also removed the fixed width on the genre tag, because its text was spilling out of the box. 
