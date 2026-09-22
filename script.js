@@ -10,15 +10,14 @@ function closeFilmViewer() {
     fullFilm.pause();
 }
 
-// the other pages don't have these elements so check first
 if (openFilm) {
 
-    // click the play button: show the pop-up and start the film
+    // cplay button show the pop-up and start the film
     openFilm.addEventListener("click", function() {
         filmModal.classList.add("show");
         fullFilm.play();
     });
 
-    // click the close button
+    // close button
     closeFilm.addEventListener("click", closeFilmViewer);
 }
