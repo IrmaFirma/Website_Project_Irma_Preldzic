@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Trapped</title>
+</head>
+
+<body class="home-page">
+
+    <!-- Doors (opening animation) -->
+    <div class="doors">
+        <div class="door door-left">
+            <div class="handle"></div>
+        </div>
+        <div class="door door-right">
+            <div class="handle"></div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="nav-left">
+            <a href="index.html" class="active">HOME</a>
+            <a href="story.html">STORY</a>
+            <a href="team.html">TEAM</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Homepage -->
+    <main class="home">
+        <!-- On the left side -->
+        <div class="left-side">
+
+            <!-- Film Preview -->
+            <section class="film-preview">
+                <div class="video-box">
+                    <!-- making the preview only, the real player is the pop-up below -->
+                    <video preload="metadata" muted>
+                        <source src="assets/trapped.mp4#t=0.5" type="video/mp4">
+                    </video>
+
+                    <button class="play-button" id="open-film" aria-label="Play film">&#9654;&#xFE0E;</button>
+                </div>
+                <div class="video-label">
+
+                    <p class="sub">WATCH FILM</p>
+
+                    <hr class="red-line">
+
+                </div>
+
+            </section>
+
+
+            <!-- NYUAD Information -->
+            <section class="nyuad-story">
+                <div class="nyuad-text">
+
+                    <p class="sub">AN NYUAD PRODUCTION</p>
+
+                    <p>
+                        Created at NYU Abu Dhabi, <em>Trapped</em> explores
+                        claustrophobia, spatial suspense, and human survival
+                        instincts through visual storytelling.
+                    </p>
+                </div> </section>
+        </div>
+
+
+        <!-- Film Information -->
+        <header class="film-title">
+
+            <h1>TRAPPED</h1>
+
+            <p class="tagline">
+                <em>What if there is no way out?</em>
+            </p>
+            <div class="genre-box">
+
+                <span>GENRE</span>
+                <span>:</span>
+                <span>THRILLER</span>
+            </div>
+
+        </header>
+
+    </main>
+
+
+    <!-- Film pop-up (hidden until you click play) -->
+    <div class="film-modal" id="film-modal">
+
+        <button class="close-film" id="close-film">CLOSE</button>
+
+        <video id="full-film" controls>
+            <source src="assets/trapped.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+
+
+
+
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>

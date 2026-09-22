@@ -1,0 +1,437 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap');
+
+
+/* body */
+body {
+    margin: 0;
+    background-color: #080707;
+    color: #d1cdcd;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* homepage background */
+.home-page {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.5)), url("assets/background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+/* navbar */
+.navbar {
+    display: flex;
+    margin: 16px 18px 0;
+    padding: 22px 62px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: none;
+}
+
+.nav-left {
+    display: flex;
+    gap: 38px;
+}
+
+.navbar a {
+    padding-bottom: 10px;
+    color: #e5e0dc;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.85rem;
+
+    letter-spacing: 2px;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+/* red line under the page you are on */
+.navbar a.active {
+    color: white;
+    border-bottom: 2px solid #d72d35;
+}
+
+
+
+/* red lines (hr tags) */
+.red-line {
+    height: 2px;
+    border: none;
+    background-color: #d72d35;
+}
+
+
+/* red labels */
+.sub {
+    color: #d72d35;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+
+/* homepage */
+.home {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    min-height: calc(100vh - 85px);
+    margin: 0 18px;
+    padding: 58px 5% 50px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: none;
+}
+/* video and NYUAD box on the left */
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px;
+}
+
+.video-box {
+    position: relative;
+    height: 180px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background-color: black;
+}
+.video-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* play button on top of the video preview */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    padding: 0 0 0 4px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.play-button:hover {
+    background-color: #d72d35;
+    border-color: #d72d35;
+}
+
+.video-label {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 12px;
+}
+
+.video-label p {
+    margin: 0;
+}
+
+
+.video-label .red-line {
+    width: 40px;
+    height: 1px;
+    margin: 0;
+}
+
+.nyuad-story {
+    padding: 22px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: rgba(5, 5, 5, 0.5);
+}
+
+.nyuad-text p {
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+.nyuad-text .sub {
+    margin-bottom: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+
+/* title on the right */
+.film-title {
+    align-self: center;
+}
+
+.film-title h1 {
+    margin: 0 0 20px;
+    color: #f5f2ee;
+    font-family: 'Playfair Display', serif;
+    font-size: 5.5rem;
+    font-weight: 400;
+    line-height: 0.9;
+    letter-spacing: -2px;
+}
+
+.tagline {
+    margin: 0 0 25px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.genre-box {
+    display: inline-flex;
+    gap: 14px;
+    padding: 13px 22px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #e2ddd8;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+
+
+.genre-box.red {
+    color: #d72d35;
+    border-color: #d72d35;
+}
+
+/* story page */
+.story {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: calc(100vh - 85px);
+    margin: 0 18px;
+    padding: 30px 0;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-top: none;
+}
+
+
+.story-card {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 740px;
+    padding: 55px 70px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    background-color: rgba(20, 20, 20, 0.55);
+}
+
+.story-card h1 {
+    margin: 20px 0 30px;
+    color: #f5f0eb;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.story-card p {
+    margin-bottom: 25px;
+    color: #b3adad;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.story-card .sub {
+    margin-bottom: 0;
+    color: #d72d35;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.story-card .red-line {
+    width: 40px;
+    margin: 0 auto;
+}
+
+
+/* team page */
+.team {
+    box-sizing: border-box;
+    min-height: calc(100vh - 85px);
+    margin: 0 18px;
+    padding: 65px 70px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-top: none;
+}
+
+.team-heading {
+    text-align: center;
+}
+
+.team-heading h1 {
+    margin: 10px 0 45px;
+    color: #f5f0eb;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.team-member {
+    width: 210px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    background-color: rgba(10, 7, 6, 0.58);
+    transition: 0.3s;
+}
+
+.team-member img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    filter: brightness(0.72);
+    transition: 0.3s;
+}
+/* hover on a team card */
+.team-member:hover {
+    border-color: #d72d35;
+}
+
+.team-member:hover img {
+    filter: brightness(1);
+}
+
+.team-member h3 {
+    margin: 18px 18px 5px;
+    color: #f1ece8;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.team-member p {
+    margin: 0 18px 12px;
+    color: #aaa29b;
+    font-size: 0.8rem;
+}
+
+.team-member .red-line {
+    width: 30px;
+    margin: 0 18px 20px;
+}
+
+/* doors opening animation */
+.doors {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    /* make sure the doors don't obstruct the rest of the page after they are opened */
+    pointer-events: none;  
+}
+
+.door {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #0b0807;
+}
+.door-left {
+    left: 0;
+    border-right: 2px solid #d72d35;
+    animation: open-left 1.8s ease-in-out 0.6s forwards;
+}
+.door-right {
+    right: 0;
+    border-left: 2px solid #d72d35;
+    animation: open-right 1.8s ease-in-out 0.6s forwards;
+}
+
+/* door handles */
+.handle {
+    position: absolute;
+    top: 50%;
+    width: 8px;
+    height: 70px;
+    background-color: #3a2e2a;
+    border-radius: 4px;
+}
+
+.door-left .handle {
+    right: 25px;
+}
+
+.door-right .handle {
+    left: 25px;
+}
+
+@keyframes open-left {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes open-right {
+    to {
+        transform: translateX(100%);
+    }
+}
+/* film pop-up */
+.film-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.92);
+    z-index: 200;
+}
+
+/* in js I added this class to show the pop-up */
+.film-modal.show {
+    display: flex;
+}
+
+.film-modal video {
+    max-width: 90%;
+    max-height: 85vh;
+}
+
+.close-film {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    padding: 0;
+    border: none;
+    background: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.close-film:hover {
+    color: #d72d35;
+}
