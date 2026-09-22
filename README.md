@@ -5,7 +5,7 @@
 Live site: https://irmafirma.github.io/Website_Project_Irma_Preldzic
 Course: IM-UH 1011
 Movie Team: Dina, Irma, Mariam
-Site creator: Irma
+Site creator: Irma Preldzic
 
 ---
 
@@ -50,10 +50,10 @@ The goal was not just to host the video. I wanted the website to extend the film
 
 ## 4. Implementation Process
 
-**Step 1: Plan the content and the mood + Wireframes Assignment**
+**Step 1: Plan the content and the mood + Assignment 1b.**
 Before writing any code I decided what each page needed to say. The story text came straight from Dina's dream and from our experience of making the film. I chose the dark palette, the red accent and the two fonts at this stage, and sketched the homepage: video at the top left, a short note about NYUAD at the bottom left, and the large title on the right.
 
-**Step 2: Build the HTML structure.**
+**Step 2: Build the skeleton HTML and CSS structure + Assignment 2b.**
 Each page shares the same navigation bar and links to one stylesheet. I used meaningful tags (`nav`, `main`, `section`, `header`) and added comments so each part is easy to find. Images have `alt` text, and the pages have their own `<title>`.
 
 **Step 3: Style everything in CSS.**
@@ -74,7 +74,7 @@ I removed unused HTML wrappers and empty `<span>` tags, replaced them with CSS, 
 
 ## 5. Challenges
 
-1. **A vertical film in a horizontal box.** Our footage is shot in portrait, so a small 16:9 preview cropped it badly. Using `object-fit: contain` for the preview and a large pop-up player for watching fixed this.
+1. **A vertical film in a horizontal box.** Our footage is shot in portrait, so a small preview cropped it badly. Using `object-fit: contain` for the preview and a large pop-up player for watching fixed this.
 2. **Making an animation that does not get in the way.** The doors needed to feel dramatic without blocking the page, which is why they use `pointer-events: none` and a short duration.
 3. **Balancing atmosphere and readability.** A very dark design suits the film, but small red text on a dark background is hard to read, so I increased the label sizes and kept the body text light and spaced out.
 4. **Time.** As with the film itself, the schedule was tight. I had to decide which features mattered most, and keep the design simple enough to finish and test properly.
@@ -83,9 +83,9 @@ I removed unused HTML wrappers and empty `<span>` tags, replaced them with CSS, 
 
 ## 6. Reflection: Did I Meet my Goals?
 
-**What worked.** The main goal was to make the site feel like part of the film, and I think the doors opening on the homepage does this best. The dark palette, thin frame and single red accent stay the same on every page, so the site feels like one piece. The film plays well in the pop-up, and the site works on both wide and narrow screens.
+**What worked.** The main goal was to make the site feel like part of the film, and I think the doors opening on the homepage does this best. The dark palette, thin frame and single red accent stay the same on every page, so the site feels like one piece.
 
-**What did not go as planned.** My first layout was more ambitious than it was stable, and I had to rebuild it. The website also feels less claustrophobic than the film does. A future version could go further, for example with a tighter corridor-style layout, flickering text, or clips from the film on the story page.
+**What did not go as planned.** The website feels less claustrophobic than the film does. A future version could go further, for example with a tighter corridor-style layout, flickering text, or clips from the film on the story page.
 
 **What I learned.** I learned that CSS should handle how things look and JavaScript should handle what things do (the hover effects are simple in CSS, but the film pop-up genuinely needs JavaScript). 
 
